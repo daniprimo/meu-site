@@ -1,16 +1,15 @@
 import styles from "./Post.module.css";
-import foto from "../../assets/posts/2/capa.png";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Botao from "Components/Botao";
 
 export default function PostCard({ post }) {
   return (
-    <Link to={`../../posts/${post.id}`}>
+    <Link to={`/posts/${post.id}`}>
       <div className={styles.post}>
         <img
-          alt={`Imagem da capa do post ${post.id}`}
+          alt={`Imagem da capa do post`}
           className={styles.capa}
-          src={foto}
+          src={`/assets/posts/${post.id}/capa.png`}
         />
         <h2 className={styles.titulo}>{post.titulo}</h2>
 

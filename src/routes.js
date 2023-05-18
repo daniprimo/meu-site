@@ -7,7 +7,7 @@ import PaginaPadrao from "Components/PaginaPadrao";
 import Post from "paginas/Post";
 import NaoEncontrado from "paginas/NaoEncontrado";
 
-function App() {
+function AppRoutes() {
   return (
     <BrowserRouter>
 
@@ -28,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
